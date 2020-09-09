@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/* THIS IS ALL meant for editing. You might want to do it differently,
+name the variables differently,
+use the fonts in other ways in the font hierarchy etc. */
+
+/* change these */
+
+
+:root {
+  --bg-color: #de2e46;
+  --link-color: white;
+  --link-hover-color: #2b2c30;
+  --color-4: purple;
+
+  --primary-font: "Josefin Sans";
+  --secondary-font: "Montserrat";
+  --main-text-color: #2b2c30;
+
+  --white-space: 1rem;
+}
+html {
+  font-size: 100%;
+  font-family: var(--primary-font);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header,
+main,
+footer {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: calc(2 * var(--white-space));
+}
+
+.full-width {
+  background: var(--bg-color);
+  color: white;
+  width: 100%;
+}
+
+.header-wrapper h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  padding-right: 0.75em;
+  font-weight: bold;
+  color: white;
+}
+
+.header-wrapper h2 {
+  font-size: 1.6em;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: bold;
+  margin: var(--white-space) 0;
+}
+
+.header-wrapper h3 {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.header-wrapper h4 {
+  font-size: 0.8rem;
+}
+
+main {
+  padding: calc(2 * var(--white-space));
+}
+
+section {
+  margin-bottom: calc(4 * var(--white-space));
+}
+
+.section-heading {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #777;
+  margin: 0.5rem 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swatches li {
+  margin-right: 5vw;
+  height: 15vw;
+  width: 20%;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+.color-swatch-1 {
+  background-color: var(--bg-color);
+}
+
+.color-swatch-2 {
+  background-color: var(--link-color);
+    border: 1px solid white;
+}
+
+.color-swatch-3 {
+  background-color: var(--link-hover-color);
+}
+
+.color-swatch-4 {
+  background-color: var(--color-4);
+}
+
+.color-swatch-5 {
+  background-color: var(--color-5);
+}
+
+
+
+.texture-swatch-1 {
+    height: 200px;
+    width: 200px;
+  background: url(../texture.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.images ul {
+  flex-direction: column;
+  text-align: center;
+}
+
+.images li {
+  display: block;
+  /*margin-right: 5vw;*/
+  margin-bottom: 1rem;
+}
+
+
+
+.typography-main {
+  color: var(--main-text-color);
+}
+
+.h1-sample {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.h2-sample {
+  font-family: var(--secondary-font);
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+p.typography-sample {
+  font-family: var(--secondary-font);
+  line-height: 1.5;
+  max-width: 960px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+p[class*="font-details-"] {
+  margin-top: 0.5rem;
+  margin-bottom: calc(2 * var(--white-space));
+  font-size: 0.75rem;
+  font-family: var(--secondary-font);
+  color: #6f6f6f;
+}
+
+.adjectives ul {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.adjectives ul {
+  flex-direction: column;
+}
+
+footer {
+  font-style: italic;
+}
+
+@media (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+  }
+
+  .swatches li {
+    margin-right: 3%;
+    height: 10vw;
+    width: 20%;
+  }
+
+  .textures li {
+    height: 15vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .adjectives ul {
+    flex-direction: row;
+  }
+}
+
+h2 {
+    color: var(--header-three)
+}
+
+.swatchgrid>li {
+    box-shadow: 7px 4px 46px -10px rgba(0, 0, 0, 0.62);
+}
+
+button {
+    border: 1px solid #2b2c30;
+    width: 200px;
+        height: 30px;
+    color: purple;
+    transition: 1s ease;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+buton:active {
+    transform: scale(1.07);
+    transition: 1s ease;
+}
+
+a {
+    margin-top: 20px;
+    color: #2b2c30;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+a:hover {
+    margin-left: 2px;
+    color: purple;
+}
