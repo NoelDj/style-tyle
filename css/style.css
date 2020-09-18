@@ -15,7 +15,7 @@ use the fonts in other ways in the font hierarchy etc. */
   --bg-color: #de2e46;
   --link-color: white;
   --link-hover-color: #2b2c30;
-  --color-4: purple;
+  --color-4: #de2e46;
 
   --primary-font: "Josefin Sans";
   --secondary-font: "Montserrat";
@@ -231,7 +231,7 @@ button {
     border: 1px solid #2b2c30;
     width: 200px;
         height: 30px;
-    color: purple;
+    color: #de2e46;
     transition: 1s ease;
     border-radius: 5px;
     font-size: 20px;
@@ -252,5 +252,9 @@ a {
 
 a:hover {
     margin-left: 2px;
-    color: purple;
+    color: #de2e46;
+}
+
+* {
+    font-size: 'montserrat';
 }
